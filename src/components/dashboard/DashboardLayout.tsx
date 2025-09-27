@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import { Sidebar } from "./Sidebar";
 import { Header } from "./Header";
+import { Chatbot } from "./Chatbot";
 
 interface DashboardLayoutProps {
   children: ReactNode;
@@ -16,6 +17,7 @@ export const DashboardLayout = ({ children }: DashboardLayoutProps) => {
           <main className="p-6">
             {children}
           </main>
+          <Chatbot />
         </div>
       </div>
     </div>
